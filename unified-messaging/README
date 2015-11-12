@@ -1,0 +1,13 @@
+This is the python script that will run and take a list of current exported users in Unity Connection that have UM, it will compare a list of emails provided that need to move to the new UM, clean it up, then add it to a new csv file. 
+
+1. Export all users in UCXN that have UM as full-export.csv.
+2. Create CSV from email list provided by administrator as email-exchange.csv.
+3. Make sure filenames match the names of the examples EXACTLY.
+4. Run python script.
+5. Use final-delete.csv (was created by the python script) and "delete" "unified message" settings for all users called out in the file. This is performed under bat tools in UCXN.
+ a. This will delete the UM setting for the users that are matched in the email-exchange.csv and also the full-export.csv.
+6. Use final-create.csv (was created by the python script) and "create" "unified message" settings for all users called out in the file. This is performed under bat tools in UCXN.
+7. Verify users that are in the final-create.csv now have Unified Messaging for the new Unified Messaging Exchange connection.
+
+-Mitch Bumgarner
+11/12/15
