@@ -1,0 +1,69 @@
+#! /usr/bin/python
+from __future__ import absolute_import
+import csv
+
+# this is just an example code of what it will output the csv file as. i will need each
+# individual item it outputs. and they will need to be in numbered order if possible.
+
+with open('did.csv', 'rb') as f:
+    reader = csv.reader(f)
+    for row in reader:
+        print row
+
+# this is the information from the csv. Normally it's in this format
+# 0174-0180=270631XXXX which wasn't helpful for me without some regex changes
+
+0174,0180,270631XXXX
+0182,0194,270631XXXX
+0686,0686,270631XXXX
+1283,1283,270827XXXX
+7800,7847,270827XXXX
+7849,7864,270827XXXX
+7866,7899,270827XXXX
+7250,7335,270831XXXX
+0000,9999,2708271801
+
+
+# This is a second python script that I want to do the real work. I want to pull the csv
+# info into where I have the numbers hard coded right now. You'll notice that the
+# first number in the "if" statement match with the first line in the csv. I need to make
+# the numbers not hard coded.
+
+#! /usr/bin/python
+
+x = input('Enter the extension here: ')
+
+if 174 <= x <= 180:
+ y = '270631XXXX'
+ print y
+
+elif 182 <= x <= 194:
+ y = '270631XXXX'
+ print y
+
+elif  686 <= x <= 686:
+ y = '270631XXXX'
+ print y
+
+elif 1283 <= x <= 1283:
+ y = '270827XXXX'
+ print y
+
+elif 7800 <= x <= 7847:
+ y = '270827XXXX'
+ print y
+
+elif 7849 <= x <= 7864:
+ y = '270827XXXX'
+ print y
+
+elif 7866 <= x <= 7899:
+ y = '270827XXXX'
+ print y
+
+elif 7250 <= x <= 7335:
+ y = '270631XXXX'
+ print y
+
+elif 0 <= x <= 9999:
+ z = '2708271801'
