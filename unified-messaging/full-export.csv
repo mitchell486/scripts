@@ -1,0 +1,3 @@
+SubscriberAlias,ServiceDisplayName,OptionalServiceAccountID,UMEmailAddress,EmailAddressUseCorp,EnableCalendar,EnableMeeting,EnableMbxSynch,EnableTts,IsPrimaryMeetingService,LoginType,UserId,UserProfileNumber
+27723,Exchange 2013 -Test,18cdaf38-696d-4a6a-9363-a835bc1e6ce0,first.last@gmail.com,1,1,0,1,1,0,0,,
+27719,Outlook Single Inbox 2007,361f089f-62a0-4d31-a709-eca35b122351,first.last@fmail.com,1,1,0,1,1,0,0,,
