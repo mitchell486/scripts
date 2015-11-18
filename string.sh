@@ -9,7 +9,7 @@ echo "What string are you trying to search?"
 read strINPUT
 
 # GREP FOR USER SET VARIABLE IN DIR
-strOUTPUT=$(grep --line-number --color=always -ri "$strINPUT" $strDIR)
+strOUTPUT=$(grep --line-number --color=always -ri "$strINPUT" $strDIR 2>/dev/null)
 
 # SHOW OUTPUT FROM GREP SEARCH
 echo "$strOUTPUT"
