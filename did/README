@@ -1,0 +1,8 @@
+This is a simple script that will go through a list of DID numbers provided by the client. It will then either print the BTN (Business Telephone Number) or non-DID directory number, whichever you specify.
+
+1. Edit your copy of did.csv with all known DID numbers. 
+ a. This format matches the standard gwtools format for DID ranges of DN,DN,DID (e.g. 1234,1234,0009991234)
+2. Edit your copy of dn.txt with all phone numbers provided by the client.
+ a. This format is simply one DN per line.
+3. Run did.py, answer the questions. 
+4. Copy the output from your terminal (or cmd).
